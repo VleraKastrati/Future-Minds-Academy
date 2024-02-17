@@ -1,0 +1,41 @@
+body, ul {
+padding: 0%;
+margin: 0%;
+}
+
+nav {
+    background-color: azure;
+    padding: 20px;
+    box-shadow: 0px 3px 7px 5px #888888;
+}
+
+li {
+float: left;
+list-style-type: none;
+margin-right: 10px;
+}
+
+li a{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgb(130, 130, 130);
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+
+}
+.activePage{
+    background-color: black;
+}
+li a:hover {
+    background-color: black;
+    transition: 1s;
+    
+}
+
+
+nav ul {
+    width: 456px;
+    margin: 0px auto;
+}
