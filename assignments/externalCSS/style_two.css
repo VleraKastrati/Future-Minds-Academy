@@ -1,0 +1,16 @@
+h2{
+    background-color:rgb(216, 161, 216);
+    color: white;
+    font-size: 40px;
+}
+
+
+
+
+p:: ::first-line{
+    font size: italic;
+}
+
+.p1::first-line{
+    font-weight: bold;
+}

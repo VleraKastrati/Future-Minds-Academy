@@ -1,0 +1,15 @@
+h1{
+    background-color:rgb(220, 147, 147) ;
+    color: black;
+    font-size: 50px;
+}
+
+p{
+    background-color: rgb(246, 230, 246);
+    width: 500px;
+}
+
+.p1{
+    background-color:bisque;
+    width: 400px;
+}

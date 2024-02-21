@@ -1,6 +1,7 @@
-body, ul {
+body, ul, {
 padding: 0%;
 margin: 0%;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -36,6 +37,43 @@ li a:hover {
 
 
 nav ul {
-    width: 456px;
+    width: 480px;
     margin: 0px auto;
 }
+
+.red {background-color: red;}
+.green {background-color: green;}
+
+.p30{padding: 30px;}
+.mt{margin-top: 30px;}
+.pt40 {padding-top: 40px;}
+
+main { width: 1150px;
+margin: 20px auto;
+}
+
+figure {
+    float: left;
+}
+h4{
+    color: red;
+}
+h2{
+    color: black;
+    font-size: 45px;
+}
+p{
+    color: grey;
+}
+.p1 {
+    float: right;
+}
+img {transition: 1s;}
+
+
+img:hover{
+    border-radius: 1000px;
+}
+
+
+
