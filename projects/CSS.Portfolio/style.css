@@ -10,6 +10,7 @@ background-image: url(image/water\ drops.avif);
 
 ul{
     padding: 1rem;
+    
 }
 header{
 text-align: center;
@@ -68,37 +69,38 @@ hr{
 }
 .Education:hover{
     background-color: rgb(203, 91, 129);
-    border: 2px solid black;
-    
+    border: 2px solid black;    
 }
+
 .education-ul {
     background-color: white;
     list-style-type: none;
     border-radius: 1rem;
-    
-}
+  }
+
 .list-content {
     text-align: left;
-    list-style-type: none;
-    
-    
+    list-style-type: none; 
+    background-color: bisque;
+    margin: 2px;
+    padding: 7px;
+    border-radius: 1rem;
 }
 .list-content::before{
-    content: "-";
-    
+    content: "-";  
 }
 .list-titles{
     text-align: left;
     color: gray;
-    font-weight: bold;
+    font-weight: bold; 
     
 }
 .myTable{
     text-align: center;
-    background-color: rgb(39, 164, 39);
-    padding: 2rem;
+    background-color: rgb(117, 207, 117);
+    padding: 3rem;
     margin: 30px 155px 0px 155px;
-    border-radius: 2rem; 
+    border-radius: 1rem; 
     
 }
 .myTable:hover{
@@ -106,7 +108,7 @@ hr{
     border: 1px solid black;
 }
 table{
-    border: 2px solid black;
+    border: 1px solid black;
     border-collapse:collapse;
     padding: 0%;
 }
