@@ -1,0 +1,246 @@
+*{
+cursor: url(image/narrow.left.png),auto;    
+}
+
+body{
+background-size cover;
+background-image: url(image/water\ drops.avif);
+
+}
+
+ul{
+    padding: 1rem;
+}
+header{
+text-align: center;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttons{
+    color: white;
+    text-decoration: none;
+}
+.nav{
+background-color: rgb(0, 119, 255);
+padding: 1rem;
+border-radius: .4rem;
+display: inline;
+text-align: center;
+text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: white;
+}
+
+
+.nav:hover{
+background-color: rgb(97, 65, 225);
+color: white;
+}
+hr{
+    background-color: black;
+    width: 75%;
+}
+
+.img-profile {
+    width: 200px;
+    border: 1px solid black;
+}
+.description{
+    background-color: rgba(255, 255, 0, 0.829);
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 30px 155px 0px 155px;
+}
+    .description:hover{
+    border:2px solid black;
+    background-color: rgba(217, 255, 3, 0.824);
+}
+   
+.Education {
+    text-align: center;
+    background-color: rgb(208, 107, 124);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 30px 155px 0px 155px;
+    
+}
+.Education:hover{
+    background-color: rgb(203, 91, 129);
+    border: 2px solid black;
+    
+}
+.education-ul {
+    background-color: white;
+    list-style-type: none;
+    border-radius: 1rem;
+    
+}
+.list-content {
+    text-align: left;
+    list-style-type: none;
+    
+    
+}
+.list-content::before{
+    content: "-";
+    
+}
+.list-titles{
+    text-align: left;
+    color: gray;
+    font-weight: bold;
+    
+}
+.myTable{
+    text-align: center;
+    background-color: rgb(39, 164, 39);
+    padding: 2rem;
+    margin: 30px 155px 0px 155px;
+    border-radius: 2rem; 
+    
+}
+.myTable:hover{
+    background-color: rgb(90, 193, 90);
+    border: 1px solid black;
+}
+table{
+    border: 2px solid black;
+    border-collapse:collapse;
+    padding: 0%;
+}
+.colored_table_r {
+    background-color:rgb(64, 168, 64);
+}
+td {
+    text-decoration: underline;
+}
+.myProjects{
+background-color: pink;
+padding: 1rem;
+border-radius: 1rem;
+margin: 30px 155px 0px 155px;
+text-align: center;
+}
+.myProjects-content{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 13px;
+}
+.myProjects:hover{
+    background-color: rgb(227, 147, 160);
+    border: 1px solid black;
+}
+.buttons-in-my-project{
+    background-color: rgb(229, 105, 48);
+    padding: 3px;
+    border-radius: 4px;
+    vertical-align: 7px;
+    color: white;
+    text-decoration: none;
+}
+.buttons-in-my-project:hover{
+    background-color: brown;
+}
+footer{
+background-color: rgb(71, 71, 71);
+padding: 1rem;
+margin: 30px 155px;
+margin-bottom: -8px;
+color: white;
+text-align: center;
+}
+.myProjects-body{
+    background-image:url(image/galaxy.jpg) ;
+}
+.project1{
+    background-color: rgb(144, 172, 201);
+    text-align: center;
+    padding: 1rem;
+    margin: 30px 155px 0px 155px;
+    margin-top: auto;
+    border-radius: 1rem;
+}
+.project1:hover{
+    background-color: rgb(194, 204, 224);
+    border: 1px solid black;
+}
+img{
+    width: 500px;
+    border: 1px solid black;
+}
+.project2{
+    background-color: rgb(144, 172, 201);
+    text-align: center;
+    padding: 1rem;
+    margin: 30px 155px 0px 155px;
+    border-radius: 1rem;
+}
+.project2:hover{
+    background-color:rgb(194, 204, 224) ;
+    border: 1px solid black;
+}
+.project3{
+    background-color: rgb(144, 172, 201);
+    text-align: center;
+    padding: 1rem;
+    margin: 30px 155px 0px 155px;
+    border-radius: 1rem;
+}
+.project3:hover{
+    background-color: rgb(194, 204, 224);
+    border: 1px solid black;
+}
+.contactMe-body {
+    background-image:url(image/white.jpg);
+    text-align: center;
+    padding-left: 1rem;
+}
+.contact_me_section1{
+    background-color: rgb(136, 148, 197);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 20px 155px 0px 155px;
+}
+.contact_me_section1:hover{
+background-color: rgb(80, 92, 138);
+border: 1px solid black;
+}
+.contact_me_section2{
+    background-color: rgb(136, 148, 197);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 20px 155px 0px 155px;
+} 
+.contact_me_section2:hover{
+    background-color: rgb(80, 92, 138);
+    border: 1px solid black;
+}
+.socialMedia-img{
+    width: 5%;
+    border: none;
+    border-radius: 5px;
+}
+.input-box{
+    position: relative;
+}
+.input-box input{
+    background: rgb(234, 234, 234);
+    border-radius: 40px;
+    border: 1px solid black;
+    outline: none;
+    width: 500px;
+    height: 40px;
+}
+.submit-btn{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 20px;
+    border: none;
+}
+.submit-btn:hover{
+    background-color: white;
+    border: 1px solid black;
+}
