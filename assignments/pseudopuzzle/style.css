@@ -1,0 +1,25 @@
+
+       
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            padding: 20px;
+            background-color:pink;
+            position: relative; 
+            margin: 50px;
+        }
+
+        
+        p:hover {
+            background-color: rgb(233, 155, 168);
+            border: 1px solid black;
+        }
+
+        
+        p::first-letter {
+            font-size: 40px; 
+            font-weight: bold;
+            float: left; 
+            margin-right: 5px; 
+        }
+
