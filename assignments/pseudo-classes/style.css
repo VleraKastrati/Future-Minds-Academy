@@ -2,22 +2,35 @@
 .mytable{
     text-align: center;
     padding: 2rem;
-    margin: 30px 155px 0px 155px;
-    border-radius: 1rem; 
-    
+    margin:10px;
+    border-radius: 1rem;   
 }
 
 table{
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse:collapse;
-    padding: 0%;
+    padding:20px;  
 }
-
+tr, th{
+    padding: 20px;
+}
+tr:first-child th {
+    background-color: #24d91a; 
+    font-weight: bold; 
+    color: black;
+    
+    }
 tr:nth-child(2n){
     background-color: green;
     text-align: center;
     font-weight: bold;
     color: white;
+    text-align: left;
 }
-
+tr:nth-child(odd) {
+    background-color: #24d91a; 
+    font-weight: bold; 
+    color: white;
+    text-align: left;
+}
 
