@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+.blog-section {
+    height: 35vh;
+    background-color: #f1e1e1;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.blog-section:nth-child(odd) p {
+    color: rgb(253, 253, 253);
+}
+
+.blog-section:nth-child(even) p {
+    color: rgb(3, 3, 3);
+}
+
+.blog-section:nth-child(even) h2 {
+    color: rgb(3, 3, 3);
+}
+
+.blog-section:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.blog-section h2 {
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(253, 253, 253);
+}
+
+.blog-section p {
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+}
+
+.blog-section hr {
+    width: 33%;
+    border: 2px solid red;
+    position: relative;
+    bottom: 0;
+}
