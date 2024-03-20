@@ -1,0 +1,32 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+header {
+    background-color: rgb(255, 228, 196);
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+   
+}
+.nav{
+  background-color: rgb(255, 192, 203);
+  grid-template-columns:1fr;
+  height: 39vw;
+  padding:9px;
+  
+}
+.content{
+    background-color: rgb(173, 255, 47);
+    grid-template-columns: 1fr;
+    height: 39vw;
+    padding: 9px;
+}
+footer{
+    background-color: rgb(89, 47, 255);
+    padding: 10px;
+}
