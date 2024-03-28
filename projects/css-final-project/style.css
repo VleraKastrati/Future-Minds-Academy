@@ -4,15 +4,15 @@
 }
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     height: 100vh;
 }
 .circle{
     background-color: white;
     width: 50px;
     height: 50px;
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 align-items: center;
 border-radius: 50%;
 }
@@ -46,11 +46,11 @@ section:hover:not(.active .avatar .asideLinks) {
 
 .active {
     background-color: red;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
-header{
-    background-color: lightgrey;
+.container{
+    background-color: rgb(241, 235, 235);
 }
 header {
     display: flex;
@@ -61,6 +61,7 @@ header div{
     align-items: center;
     gap: 2rem;
 }
+
 
 .notifications{
     position: relative;
@@ -81,7 +82,7 @@ header div{
 }
 .notificationsMsg{
     padding: 10px;
-    width: 150px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     background-color: white;
