@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:(4,1fr,100px) ;
+    grid-template-rows: (3,1fr);
+    height: 100vh;
+    column-gap: 75px;
+}
+
+.header, .footer{
+    background-color: lightcoral;
+    grid-column: 1/5;
+}
+
+.green{
+    background-color: lightgreen;
+}
