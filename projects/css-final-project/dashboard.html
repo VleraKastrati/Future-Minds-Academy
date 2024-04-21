@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside>
+        <div class=" asideLinks logo">
+            <p>CP</p>
+            <p>COOL PAGE</p>
+        </div>
+        <hr>
+
+        <div class="asideLinks avatar">
+            <figure>
+                <img class="avatar-img" src="images/avatar.jpg" alt="avatar">
+            </figure>
+            <p>John Doe</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+
+        <hr>
+        <div class="asideLinks active">
+            <figure>
+                <img src="images/asideDashboard.svg" alt="dashboard">
+            </figure>
+            <p>Dashboard</p>
+        </div>
+        <div class="asideLinks">
+            <figure>
+                <img src="images/pages.svg" alt="pages">
+            </figure>
+            <p>Pages</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+        <div class="asideLinks">
+            <figure>
+                <img src="images/components.svg" alt="components">
+            </figure>
+            <p>Components</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+        <div class="asideLinks">
+            <figure>
+                <img src="images/form.svg" alt="forms">
+            </figure>
+            <p>Forms</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+        <div class="asideLinks">
+            <figure>
+                <img src="images/table.svg" alt="tables">
+            </figure>
+            <p>Tables</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+        <div class="asideLinks">
+            <figure>
+                <img src="images/map.svg" alt="maps">
+            </figure>
+            <p>Maps</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+        <div class="asideLinks">
+            <figure>
+                <img src="images/widget.svg" alt="widget">
+            </figure>
+            <p>Widgets</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+        <div class="asideLinks">
+            <figure>
+                <img src="images/chart.svg" alt="charts">
+            </figure>
+            <p>Charts</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+        <div class="asideLinks">
+            <figure>
+                <img src="images/calendar.svg" alt="calendar">
+            </figure>
+            <p>Calendar</p>
+            <img src="images/expandMore.svg" alt="more">
+        </div>
+    </aside>
+
+    <div class="container">
+        <header>
+            <div class="Info">
+                <figure class="circle" title="See More">
+                    <img src="images/more.svg" alt="more">
+                </figure>
+                <h1>Dashboard</h1>
+            </div>
+            <div>
+                <form class="form">
+                    <input type="search" id="search" placeholder="Search">
+                </form>
+                <figure class="circle" title="Search">
+                    <img src="images/search.svg" alt="search">
+                </figure>
+                <figure title="Dashboard">
+                    <img src="images/headerDashboard.svg" alt="dashboard">
+                </figure>
+                <div class="notifications" title="Notifications">
+                    <img src="images/notifications.svg" alt="notifications">
+                    <p class="notificationsInfo">5</p>
+
+                    <div class="notificationsMsg">
+                        <p>John Doe sent a message</p>
+                        <p>Someone viewed your profile</p>
+                        <p>John Doe sent a message</p>
+                        <p>Someone viewed your profile</p>
+                        <p>Another notification</p>
+                    </div>
+                </div>
+                <figure title="Profile">
+                    <img src="images/headerAvatar.svg" alt="avatar">
+                </figure>
+            </div>
+        </header>
+
+        <main>
+            <section class="mainCard">
+                <span class="material-symbols-outlined green">
+                    language
+                </span>
+                <p class="title"> Global Sales by Top Locations</p>
+
+                <div class="mainCardInfo">
+                    <table>
+                        <tr>
+                            <td><img class="flag" src="images/us.svg" alt="flag of USA"></td>
+                            <td>USA</td>
+                            <td>2.920</td>
+                            <td>53.23%</td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="flag" src="images/germany.svg" alt="flag of Germany"></td>
+                            <td>Germany</td>
+                            <td>1.300</td>
+                            <td>4.34%</td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="flag" src="images/italy.svg" alt="flag of Italy"></td>
+                            <td>Italy</td>
+                            <td>760</td>
+                            <td>20.43%</td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="flag" src="images/albania.svg" alt="flag of Albania"></td>
+                            <td>Albania</td>
+                            <td>690</td>
+                            <td>10.35%</td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="flag" src="images/kosovo.svg" alt="flag of Kosova"></td>
+                            <td>Kosova</td>
+                            <td>600</td>
+                            <td>7.87%</td>
+                        </tr>
+                    </table>
+                    <div class="mainCard-iframe">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1712487466010!5m2!1sen!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking-card">
+                <div class="booking-card-box">
+                    <figure>
+                        <span class="material-symbols-outlined orange">chair
+                        </span>
+                    </figure>
+                    <p class="booking-card-title">Bookings</p>
+                    <p class="booking-card-number">184</p>
+                    <hr>
+                    <div class="booking-card-footer">
+                        <span class="material-symbols-outlined 1">warning</span>
+                        <p>Get more space</p>
+                    </div>
+                </div>
+
+                <div class="booking-card-box">
+                    <figure>
+                        <span class="material-symbols-outlined pink">bar_chart</span>
+                    </figure>
+                    <p class="booking-card-title">Website Visits</p>
+                    <p class="booking-card-number">75.521</p>
+                    <hr>
+                    <div class="booking-card-footer">
+                        <span class="material-symbols-outlined 1">sell</span>
+                        <p>Tracked from Google Analytics</p>
+                    </div>
+                </div>
+
+                <div class="booking-card-box">
+                    <figure>
+                        <span class="material-symbols-outlined green">store</span>
+                    </figure>
+                    <p class="booking-card-title">Revenue</p>
+                    <p class="booking-card-number">$34,245</p>
+                    <hr>
+                    <div class="booking-card-footer">
+                        <span class="material-symbols-outlined 1">calendar_month</span>
+                        <p>Last 24 Hours</p>
+                    </div>
+                </div>
+
+                <div class="booking-card-box">
+                    <figure>
+                        <span class="material-symbols-outlined blue">public</span>
+                    </figure>
+                    <p class="booking-card-title">Followers</p>
+                    <p class="booking-card-number">+245</p>
+                    <hr>
+                    <div class="booking-card-footer">
+                        <span class="material-symbols-outlined">history</span>
+                        <p>Just Updated</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="manage-list-container">
+                <p class="manageTitle">Manage Listings</p>
+                <div class="manage-list-item">
+                    <div class="manage-list-item-animation">
+                        <img src="images/card-1.jpeg" class="manage-list-item-img">
+
+                        <div class="manage-list-item-edits">
+                            <figure title="view">
+                                <img src="images/view.svg" alt="view">
+                            </figure>
+                            <figure title="edit">
+                                <img src="images/edit.svg" alt="edit">
+                            </figure>
+                            <figure title="delete">
+                                <img src="images/delete.svg" alt="delete">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p class="manage-list-item-title">Cozy 5 Stars Apartment</p>
+                    <p class="manage-list-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate itaque excepturi ipsa fugiat possimus odit perferendis, quisquam, laborum soluta
+                        ratione minima.</p>
+                    <hr>
+
+                    <div class="manage-list-item-bottom">
+                        <p>$899/night</p>
+                        <div class="manage-list-item-bottom-right">
+                            <span class="material-symbols-outlined grey" title="Location">location_on</span>
+                            <p>Barcelona, Spain</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manage-list-item">
+                    <div class="manage-list-item-animation">
+                        <img src="images/card-2.jpeg" class="manage-list-item-img">
+
+                        <div class="manage-list-item-edits">
+                            <figure title="view">
+                                <img src="images/view.svg" alt="view">
+                            </figure>
+                            <figure title="edit">
+                                <img src="images/edit.svg" alt="edit">
+                            </figure>
+                            <figure title="delete">
+                                <img src="images/delete.svg" alt="delete">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p class="manage-list-item-title">Office Studio</p>
+                    <p class="manage-list-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate itaque excepturi ipsa fugiat possimus odit perferendis, quisquam, laborum soluta
+                        ratione minima.</p>
+                    <hr>
+
+                    <div class="manage-list-item-bottom">
+                        <p>$1.119/night</p>
+                        <div class="manage-list-item-bottom-right">
+                            <span class="material-symbols-outlined grey" title="Location">location_on</span>
+                            <p>London, UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manage-list-item">
+                    <div class="manage-list-item-animation">
+                        <img src="images/card-3.jpeg" class="manage-list-item-img">
+
+                        <div class="manage-list-item-edits">
+                            <figure title="view">
+                                <img src="images/view.svg" alt="view">
+                            </figure>
+                            <figure title="edit">
+                                <img src="images/edit.svg" alt="edit">
+                            </figure>
+                            <figure title="delete">
+                                <img src="images/delete.svg" alt="delete">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p class="manage-list-item-title">Beautiful Castle</p>
+                    <p class="manage-list-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate itaque excepturi ipsa fugiat possimus odit perferendis, quisquam, laborum soluta
+                        ratione minima.</p>
+                    <hr>
+
+                    <div class="manage-list-item-bottom">
+                        <p>$459/night</p>
+                        <div class="manage-list-item-bottom-right">
+                            <span class="material-symbols-outlined grey" title="Location">location_on</span>
+                            <p>Milan, Italy</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="left-side-footer">
+                    <a href="#">
+                        <h4>HOME</h4>
+                    </a>
+                    <a href="#">
+                        <h4>COMPANY</h4>
+                    </a>
+                    <a href="#">
+                        <h4>PORTFOLIO</h4>
+                    </a>
+                    <a href="#">
+                        <h4>BLOG</h4>
+                    </a>
+                </div>
+                <p> &copy; <i>John Doe,</i>2023</p>
+            </div>
+        </footer>
+    </div>
+    </main>
+    </div>
+    </main>
+</body>
+
+</html>

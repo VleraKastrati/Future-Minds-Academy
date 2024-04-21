@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": ".."
+		},
+		{
+			"path": "../FMACSS-Framework"
+		},
+		{
+			"path": "../../../Downloads/__MACOSX/FMACSS-Framework"
 		}
 	]
 }
