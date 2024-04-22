@@ -471,14 +471,14 @@ hr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color:var(--text-color);
+    color:black;
 }
 a{
     text-decoration: none;
 }
 .left-side-footer h4 {
     margin-right: 10px;
-    color: var(--text-color);
+    color: black;
     font-size: 14px;
 }
 /*    RESPONSIVE      */
