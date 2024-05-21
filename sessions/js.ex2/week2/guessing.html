@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+
+<body>
+    <h3 class="tries">Tries: 3</h3>
+<label for="">Guess a number between 1-10: </label><br>
+<input type="number" id="userNum">
+<p class="hints"></p>
+<button onclick="guessNumber()">Guess</button>
+<hr>
+<h3 class="msg"></h3>
+
+
+    <script>
+        let guessedNum = Math.floor(Math.random() * 10) + 1;
+        console.log(guessedNum);
+        const userNum = document.querySelector("#userNum");
+        const hints = document.querySelector(".hints");
+        const msg = document.querySelector(".msg")
+        const tries = document.querySelector(".tries");
+
+        let triesCount = 3;
+
+        let guessNumber = function() {
+            if (userNum.value < guessedNum){
+            hints.textContent = "Please guess higher: ";
+        }
+        if(userNum.value > guessedNum) 
+        {
+            hints.textContent = "Please guess lower: ";
+    }
+
+    if (userNum.value == guessedNum) {
+        msg.textContent =  "Congratulations";
+        hints.textContent =""
+        }
+        else {
+            if(triesCount == 1){
+            msg.textContent = "You lost";
+            hints.textContent =""
+        }
+        }
+
+        triesCount--;
+        tries.textContent = "Tries: " + triesCount;
+    }
+        /*
+        let guessedNum = Math.floor(Math.random() * 10) + 1;
+        console.log(guessedNum);
+
+        let userNum = prompt("Guess a number between 1-10: ");
+
+        if (userNum < guessedNum) {
+            guessedNum = prompt("Please guess higher: ");
+        }
+        if(userNum > guessedNum) { userNum = prompt("Please guess lower: ");
+    }
+         { userNum = prompt("Please guess lower: ") }
+
+        if (userNum == guessedNum) {
+            console.log("Congratulations");
+        }
+        else {
+            console.log("You lost");
+        }
+*/
+    </script>
+</body>
+
+</html>

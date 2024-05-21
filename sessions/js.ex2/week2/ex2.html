@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+Num1: <input type="number" id="num1"> <br>
+Num2: <input type="number" id="num2"> <br><br>
+
+<select id="arithmetic">
+    <option value="sum">Add</option> 
+    <option value="diff">Subtract</option> 
+    <option value="divide">Divide</option>
+    <option value="multiply">Multiply</option>
+</select><br>
+
+
+Result: <h3 id="resultMsg">0</h3>
+<button onclick="doCalculation();">Calculate</button>
+<body>
+
+    <script>
+        const num1 = document.querySelector("#num1");
+        const num2 = document.querySelector("#num2");
+        const arithmetic = document.querySelector("#arithmetic")
+        constresultMsg = document.querySelector("#resultMsg");
+
+ let result = calculate("sum", 6, 2);
+        console.log( "Sum: " + result);
+
+         result = calculate("diff", 6, 2);
+        console.log( "Diff:" + result);
+
+         result = calculate("divide", 6, 2);
+        console.log( "Divide:" + result);
+
+        result = calculate("multiply", 6, 2);
+        console.log()
+       
+
+        function calculate(arg, a, b) {
+            if(arg == "sum"){
+            return a + b;
+         }
+         }
+
+         function calculate(arg, a, b) {
+            if(arg == "div"){
+            return a / b;
+         }
+        }
+        function calculate(arg, a, b) {
+            if(arg == "diff"){
+            return a - b;
+         }
+         if(arg=="sum"){
+            return a + b;
+         }
+         if(arg=="div"){
+            return a / b;
+         }
+         if(arg=="multiply"){
+            return a * b;
+         }
+
+        }
+        
+        
+        function doCalculation(){
+            console.log("Num1:"+ num1.value);
+            console.log("Num2:"+ num2.value);
+
+            console.log(arithmetic.value);
+
+            let finalResult = calculate(arithmetic.value, num1.value, num2.value);
+
+            resultMsg.textContent =finalResult;
+        }
+        
+    </script>
+</body>
+
+</html>

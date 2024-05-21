@@ -1,0 +1,908 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(images/restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: #ECE2D0;
+    font-family:'Roboto',sans-serif ;
+   overflow-y: scroll;   
+}
+header{
+    display: flex;
+    margin: -20px 5px; 
+    height: 100vh;
+}
+.logo {
+   display: flex;
+   flex-direction: row;
+    margin: 15px;
+    padding: 10px 0;
+}
+.logo-restaurant{
+    margin: 10px;
+ font-size: 20px;
+ font-weight: 600;
+ color: white;
+ letter-spacing: 0.7px;
+}
+.contact{
+    display: flex;
+    margin: 15px;
+    padding: 10px 0;
+}
+.tel-img{
+    width: 30px;
+    height: 30px; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.reservation{
+    display: flex;
+}
+.main-container{
+    height: 100px;
+    width: 98%;
+    margin-top: 50px;
+    display: flex; 
+} 
+a:hover{
+    color: #D8AA96;
+}
+.container{
+   margin-top: -90%; 
+    margin-left: 20px;
+}
+.stars{
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    margin: auto; 
+    color: wheat;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 0.75s linear forwards;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+h1 span:nth-child(1){
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(2){
+    animation-delay:1s ;
+}
+h1 span:nth-child(3){
+    animation-delay:1.5s ;
+}
+h1 span:nth-child(4){
+    animation-delay:2s ;
+}
+h1 span:nth-child(5){
+    animation-delay:2.5s ;
+}
+ .arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: -15%;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px); 
+    }
+}
+.arrow-img{
+    margin-left: 8px;
+    margin-top: 10px;
+
+}
+.arrow:hover{
+  border: 1px solid  #8f492a;
+}
+/*   ABOUT RESTAURANT   */
+.about-restaurant{
+    margin-top: 40px;
+    height: 100vh;
+}
+.restaurant-paragraph{
+    margin: 20px;
+}
+.restaurant-title, h2{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 10px;
+    padding: 5px;
+}
+.restaurant-title{
+    font-size: 25px;
+}
+.restaurant-intro {
+    margin: 0;
+    padding: 0;
+    line-height: 2em;
+    line-break: 10px;
+}
+.restro, .timer-image {
+    display: flex;
+    margin: 5px;
+}
+/*   COUNTING   */
+.section-count{
+    margin-top: 50px;
+    height: 100vh;
+box-sizing: border-box;
+}
+.div-container{
+height: 100vh;
+background-image:url(images/matt.avif);
+background-size: cover;
+padding: 80px;
+display: flex;
+position: relative;
+}
+.count-event{
+    font-family: "Caveat", cursive;
+    font-size: 70px;
+    padding-top: 70px;
+    color: white;
+}
+.count-img{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.content{
+position: absolute;
+transform: translateY(-50%);
+color: white;
+margin-top: 30%;
+}
+.content h3{
+    font-size: 64px;
+    font-weight: 550;
+}
+.count-number{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.count-number div{
+    flex-basis: 100px;
+}
+.count-number div p{
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    left: 85%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+/*   MENU    */
+.section-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.section-title{
+  
+    margin-bottom: 60px;
+}
+.section-title h4{
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+h4{
+    color: snow;
+}
+.luxury{
+    font-size: 23px;   
+}
+
+.menu-items{
+    flex-basis: 32%;
+}
+.menu-title{
+    background-color: #D3A588;
+    padding: 10px 0;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.price-menu{
+    background-color: black;
+    border: 1px solid white;
+    padding: 25px;
+    position: relative;
+    transition: .3s;
+    margin-bottom: 30px;
+}
+.price-menu:hover{
+    border-color: #D3A588;
+    border-radius: 7px;
+}
+.price-menu span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #D3A588;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px 0 0 0;
+}
+.price-menu .menu-img{
+max-width: 80px;
+border: 1px solid white;
+padding: 3px;
+transition: .3s;
+}
+.price-menu:hover .menu-img{
+    border-radius: 50%;
+}
+.price-menu h4{
+    border-bottom: 1px dashed white;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+.price-menu a{
+    display: inline-block;
+    color: #773344;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.menu-img{
+    width: 80px;
+    height: 80px;
+}
+.menu-area{
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    padding: 100px 0;
+    color: white;
+}
+.menu-area::before{
+    position: absolute;
+    content: "";
+   
+    height: 100%;
+    background-color: gray;
+    z-index: -2;
+    opacity: -95;
+    top: 0;
+    left: 0;
+}
+/*    DESSERTS   */
+.section-vl{
+    margin: 0;
+    padding: 0;
+    background-color: #FFE9F3;
+    box-sizing: border-box;
+    }
+    .special{
+        font-size: 50px;
+        font-weight: 400;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: -80px;
+        padding: 20px;
+        color: rgb(230, 207, 166);
+    }
+.ctr-accordion{
+    max-width: 1400px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    gap: 20px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+.tab{
+    position: relative;
+    width: 20%;
+    height: inherit;
+    padding: 20px;
+    background: rgb(150,150,150);
+    cursor: pointer;
+    transition: width .5s ease;
+    border-radius: 25px;
+}
+.tab img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    border-radius: 25px;
+}
+.tab:hover img{
+    opacity: 0.6;
+}
+.tab:hover{
+    width: 80%;
+}
+
+/*    BOOKING     */
+.booking-section {
+    margin-top: 22%;
+    height: 40vh;
+    display: flex;
+    flex: 1;
+    margin-inline: 3em;
+    margin-bottom: -5%;
+   }
+   .check-in, .check-out, .email, .book{
+    border: 1px dotted white;
+    background-color: #38423B;
+    width: 50%;
+    height: 75%;
+  padding: 40px 70px;
+  gap: 1rem;
+   }
+   .check-in:hover{
+    background-image: url(images/interior.jpg) ;
+    background-size: cover;
+    opacity: 0.60;
+    transition: 1.5s ease-in;
+    cursor: pointer;  
+   }
+   .check-out:hover{
+background-image: url(images/view.jpg);
+background-size: cover;
+opacity: 0.60;
+transition: 1.5s ease-in;
+cursor: pointer;
+  }
+  .email:hover{
+    background-image: url(images/view-night.jpg);
+    background-size: cover;
+    opacity: 0.60;
+    transition: 1.5s ease-in;
+    cursor: pointer;
+  }
+.booking{
+    color: rgb(235, 209, 64); 
+    text-align: center;
+}
+.form{
+    display: flex;
+    margin-top: 20px;
+}
+ .form input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    transition: border-bottom 2s ease;
+    padding: 5px;
+}
+.form input:focus{
+    border-bottom: 2px solid gold;
+}
+.data, .image-more{
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px;
+    margin-top: 20px;
+}
+.booking-check {
+max-width: 100%;
+padding-inline: auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 0.5rem;
+}
+.button{
+border: none;
+outline: none;
+padding: 7px;
+margin-left: 35px;
+margin-top: 20px;
+background-color: whitesmoke;
+}
+.button:hover{
+    background-color:rgb(235, 209, 64) ;
+    transition: 1.5s ease;
+    cursor: pointer;
+}
+/*     FOOTER      */
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    margin-bottom: 80px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #3586ff;
+    min-height: 100px;
+    padding: 60px 50px;
+}
+footer .social-icon, 
+footer .description{
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social-icon li,
+footer .description li{
+    list-style: none;
+}
+footer .social-icon li a{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social-icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .description li a{
+    font-size: 1.2em;
+    color: white;
+    margin:  10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .description li a:hover{
+    opacity: 1;
+}
+footer .copy {
+color: white;
+margin-top: 10px;
+margin-bottom: -25px;
+font-size: 1em;
+cursor: pointer;
+
+}
+footer .wave{
+position: absolute;
+top: -50px;
+left: 0;
+width: 100%;
+height: 100px;
+background: url(images/wave.png);
+background-size: 1000px 100px;
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 7s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave-02 6s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 5s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave-02 4s linear infinite;
+}
+@keyframes animateWave{
+    0%
+    {
+background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave-02{
+    0%
+    {
+background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+        /* RESPONSIVE */
+    @media (max-width: 768px) {
+        /* HEADER */
+        header {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .logo, .contact {
+            display: flex;
+            justify-content: space-around;
+        }
+        .contact{
+            margin-top: -80%;
+           margin-inline: 35%;
+        }
+        .container {
+            margin-top: -180%;
+            margin-left: 10px;
+        }
+        .main-container {
+            margin-top:90px;
+            width: 90%;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .arrow {
+            width: 45px;
+            height: 40px;
+        }
+        .logo{
+            display: flex;
+            justify-content: start;
+         }
+    }
+    @media (max-width: 480px) {
+        .logo-restaurant {
+            font-size: 15px;
+        }
+        h1 {
+            font-size: 1.5em;
+            top: 120px;
+        }
+        .arrow {
+            width: 45px;
+            height: 40px;
+        }
+        .logo{
+           display: flex;
+           justify-content: center;
+        }
+        .contact{
+            font-size: 14px;
+            margin-top: -127%;
+            margin-inline: 25%;
+            margin-left: 5%;
+        }
+        .container {
+            margin-top: -305%;
+            margin-left: 5px;
+        }
+    }
+/* Restaurant */
+@media (max-width: 768px) { /* Tablet */
+    .about-restaurant {
+        height: auto;
+        margin-top: -10%;
+    }
+    .restaurant-title {
+        font-size: 10px;
+    }
+    .restaurant-paragraph {
+        margin: 10px;
+    }
+     .timer-image {
+        display: flex;
+        flex-direction: column;
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width: 480px) { /* iPhone */
+    .about-restaurant {
+        height: auto;
+    }
+    .restaurant-title {
+        font-size: 8px;
+    }
+    .restaurant-paragraph {
+        margin: 5px;
+    }
+    .timer-image {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+/* COUNTING */
+@media (max-width: 1024px) {
+    .count-event, .content h3 {
+        font-size: 50px;
+    }
+    .count-number div p {
+        font-size: 40px;
+    }
+    .rocket {
+        width: 200px;
+        left: 80%;
+    }
+    .section-title h4 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .div-container {
+        padding: 40px;
+    }
+    .count-event, .content h3 {
+        font-size: 40px;
+    }
+    .count-number div p {
+        font-size: 30px;
+    }
+    .rocket {
+        width: 150px;
+        left: 75%;
+    }
+    .section-title h4 {
+        font-size: 25px;
+    }
+    .menu-items {
+        flex-basis: 48%;
+    }
+}
+@media (max-width: 480px) {
+    .div-container {
+        padding: 20px;
+    }
+    .count-event, .content h3 {
+        font-size: 30px;
+    }
+    .count-number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -75%;
+    }
+    .count-number div p {
+        font-size: 20px;
+    }
+    .rocket {
+        width: 100px;
+        left: 70%;
+    }
+}
+/* MENU */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-basis: 48%;
+        margin-bottom: 20px;
+    }
+    .menus{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        width: 60%;
+        height: 40%;
+    }
+    .section-title h4 {
+        font-size: 20px;
+        line-height: 48px;
+    }
+    .luxury {
+        font-size: 15px;   
+    }
+    .price-menu {
+        padding: 15px;
+    }
+    .price-menu span {
+        font-size: 18px;
+        padding: 6px 15px;
+    }
+    .price-menu h4 {
+        font-size: 15px;
+    }
+    .price-menu a {
+        margin-top: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .menu-items {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .menus{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        width: 30%;
+        height: 30%;
+    }
+    .section-title h4 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .luxury {
+        font-size: 18px;   
+    }
+    .price-menu {
+        padding: 15px;
+    }
+    .price-menu span {
+        font-size: 16px;
+        padding: 5px 12px;
+    }
+    .price-menu h4 {
+        font-size: 18px;
+    }
+    .price-menu a {
+        margin-top: 15px;
+    }
+}
+/* DESSERT */
+@media (max-width: 768px) {
+    .ctr-accordion {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .tab {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .tab:hover img{
+        opacity: 0.6;
+    }
+    .tab:hover{
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    .special {
+        font-size: 30px;
+        margin-bottom: -40px;
+    }
+    .ctr-accordion {
+        margin: 50px auto;
+    }
+    .tab {
+        height: 150px;
+    }
+    .tab:hover img{
+        opacity: 0.6;
+    }
+    .tab:hover{
+        width: 70%;
+    }
+}
+/* BOOKING */
+@media (max-width: 1024px) {
+    .booking-section {
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 1em;
+        margin-top: 10%;
+        height: auto;
+    }
+    .check-in, .check-out, .email, .book {
+        width: 80%;
+        height: auto;
+        padding: 20px 30px;
+        margin-bottom: 1em;
+    }
+     .image-more{
+        text-align: center;   
+    }
+    .button {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .booking-section {
+        margin-inline: 0.5em;
+    }
+    .check-in, .check-out, .email, .book {
+        width: 100%;
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 480px) {
+    .check-in, .check-out, .email, .book {
+        padding: 10px 15px;
+    }
+    .form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .button {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+/* FOOTER */
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 30px;
+    }
+    footer .social-icon li a {
+        font-size: 1.5em;
+    }
+    footer .description li a {
+        font-size: 1em;
+    }
+}
+@media (max-width: 480px) {
+    footer {
+        padding: 30px 20px;
+    }
+    footer .social-icon li a {
+        font-size: 2em;
+        margin: 10px;
+    }
+    footer .description li a {
+        font-size: 0.9em;
+        margin: 5px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
