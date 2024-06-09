@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year Of Birth</title>
 </head>
+
 <body>
     <script>
-   const currentYear = new Date().getFullYear();
+        const currentYear = new Date().getFullYear();
 
-const age = prompt("Please enter your age:");
-
-
-const yearOfBirth = currentYear - age;
+        const age = prompt("Please enter your age:");
 
 
-console.log(`You are ${age} years old so you were probably born in the year ${yearOfBirth}.`);
+        const yearOfBirth = currentYear - age;
+
+
+        console.log(`You are ${age} years old so you were probably born in the year ${yearOfBirth}.`);
     </script>
 </body>
+
 </html>
