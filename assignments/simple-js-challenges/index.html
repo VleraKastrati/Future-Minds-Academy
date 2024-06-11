@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Js Challenges</title>
+</head>
+
+<body>
+    <script>
+
+        let kilometers = prompt('Enter the number of kilometers');
+        let miles = kilometers / 1.6;
+        console.log(`${kilometers} kilometers is approximately ${miles.toFixed(2)} miles,`)
+
+        let radius = prompt('Enter the radius of the circle:');
+        let area = Math.PI * Math.pow(radius, 2);
+        console.log(`The area of a circle with radius ${radius} is approximately ${area.toFixed(2)} square units.`);
+
+        let euros = prompt('Enter the amount in euros:');
+        const exchangeRate = 1.18;
+        let dollars = euros * exchangeRate;
+        console.log(`${euros} euros is approximately ${dollars.toFixed(2)} dollars.`);
+    </script>
+</body>
+
+</html>
