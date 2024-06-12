@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+
+<body>
+    <script>
+
+        let username = prompt("Enter your username:");
+        let password = prompt("Enter your password:");
+
+        if (username == "admin" && password == "12341234") {
+            alert("Welcome, admin!");
+        } else {
+            alert("Wrong credentials.");
+        }
+
+
+        let userName = prompt("Enter your username:");
+        let pass = prompt("Enter your password:");
+
+        if (!(username !== "admin" || password !== "12341234")) {
+            alert("Welcome, admin!");
+        } else {
+            alert("Wrong credentials.");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
