@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels and Consonants</title>
+</head>
+<body>
+    <h1>Press any key to see the detection</h1>
+    <p id="message"></p>
+
+    <script>
+        document.addEventListener('keypress', (e) => {
+            let letter = e.key;
+            let message = '';
+
+            if (letter.length === 1) {
+                if ('aeiouAEIOU'.includes(letter)) {
+                    message = `You pressed a vowel: ${letter}`;
+                } 
+                else if (/[a-zA-Z]/.test(letter)) {
+                    message = `You pressed a consonant: ${letter}`;
+                } 
+                else if (/\d/.test(letter)) {
+                    message = `You pressed a number: ${letter}`;
+                } 
+                else {
+                    message = `You pressed a symbol: ${letter}`;
+                }
+            } else {
+                message = 'Invalid input';
+            }
+
+            document.getElementById('message').innerText = message;
+        });
+    </script>
+</body>
+</html>
