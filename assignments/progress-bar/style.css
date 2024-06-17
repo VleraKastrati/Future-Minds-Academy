@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    width: 5rem;
+}
+
+.indicator {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.progress-bar-wrapper {
+    flex-grow: 1;
+    position: relative;
+}
+
+.progress-bar {
+    position: absolute;
+    left: 3px;
+    width: 20%;
+
+}
