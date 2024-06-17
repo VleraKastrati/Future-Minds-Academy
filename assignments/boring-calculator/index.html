@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boring Calculator</title>
+</head>
+
+<body>
+
+    <script>
+
+        let a = parseInt(prompt(`Enter the first number`));
+        let operation = prompt(`Write the operation`)
+        let b = parseInt(prompt(`Enter the second number`));
+
+        let finalresult;
+
+        switch (operation) {
+            case '+':
+                finalresult = a + b;
+                break;
+            case '-':
+                finalresult = a - b;
+                break;
+            case '*':
+                finalresult = a * b;
+                break;
+            case '/':
+                if (b == 0) {
+                    throw new Error(`Cannot divide by 0!`);
+                }
+
+                finalresult = a / b;
+                break;
+            default:
+                throw new Error(`Unknown operation`);
+        }
+
+
+        console.log(finalresult);
+
+    </script>
+</body>
+
+</html>
