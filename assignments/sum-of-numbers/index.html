@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of numbers</title>
+</head>
+<body>
+    <script>
+        let userInput = parseInt(prompt('Enter a positive number'));
+        let sum = 0;
+
+        while (!isNaN(userInput) && userInput !== 0){
+            sum += userInput;
+            userInput = parseInt(prompt('Enter another number'));
+        }
+
+        console.log(`The sum of the entered numbers is ${sum}`);
+    </script>
+</body>
+</html>
