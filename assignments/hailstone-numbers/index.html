@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hailstone Numbers</title>
+</head>
+
+<body>
+    <script>
+        let number = parseInt(prompt('Type a number'));
+        console.log(`The number you typed is ${number}`);
+
+        do {
+            if (number % 2 == 1) {
+                number = number * 3 + 1;
+                console.log(number);
+            }
+            else {
+                number = number / 2;
+                console.log(number);
+            }
+        } while (number !== 1)
+    </script>
+</body>
+
+</html>
