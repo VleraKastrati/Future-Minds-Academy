@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Spaghetti</title>
+</head>
+
+<body>
+    <script>
+
+        let tempStr = "New York, 15°C";
+        let city = tempStr.split(',')[0].trim();
+        let temperature = parseInt(tempStr.split(',')[1]);
+        console.log(city);
+        console.log(temperature);
+
+
+        let tempStr2 = "Ottawa, -4°C";
+        let city2 = tempStr2.split(',')[0].trim();
+        let temperature2 = parseInt(tempStr2.split(',')[1]);
+        console.log(city2);
+        console.log(temperature2);
+
+
+        let tempStr3 = "Prishtina, 50°F";
+        let city3 = tempStr3.split(',')[0].trim();
+        let temperature3 = parseInt(tempStr3.split(',')[1]);
+        console.log(city3);
+        console.log(temperature3);
+
+    </script>
+</body>
+
+</html>
