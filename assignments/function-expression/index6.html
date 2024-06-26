@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        try {
+            let welcomeMessage = welcomeUser("Vlere", "Kastrati");
+            console.log(welcomeMessage);
+        } catch (e) {
+            console.log(e.message);
+        }
+
+        const welcomeUser = function (name, surname) {
+            return `Welcome, ${name} ${surname}`;
+        };
+
+        // Example call
+        let welcomeMessage = welcomeUser("Vlere", "Kastrati");
+        console.log(welcomeMessage);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+try {
+    let miles = kilometersToMiles(10);
+    console.log(miles);
+} catch (e) {
+    console.log(e.message);  
+}
+
+const kilometersToMiles = function(kilometers) {
+    const miles = kilometers * 0.621371;
+    return miles;
+};
+
+let miles = kilometersToMiles(10);
+console.log(miles); 
+
+    </script>
+</body>
+</html>

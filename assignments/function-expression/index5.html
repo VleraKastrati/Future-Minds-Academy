@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+try {
+    let area = areaOfCircle(5);
+    console.log(area);
+} catch (e) {
+    console.log(e.message);  
+}
+
+const areaOfCircle = (radius) => {
+    const area = Math.PI * Math.pow(radius, 2);
+    return area;
+};
+
+// Example call
+let area = areaOfCircle(5);
+console.log(area); 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+try {
+    printHelloWorld();
+} catch (e) {
+    console.log(e.message); 
+}
+
+const printHelloWorld = function() {
+    for (let i = 0; i < 10; i++) {
+        console.log("Hello World");
+    }
+};
+
+// Example call
+printHelloWorld();
+
+    </script>
+</body>
+</html>
