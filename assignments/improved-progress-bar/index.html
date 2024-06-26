@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Progress Bar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .progress-bar-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60%;
+            width: 5rem;
+        }
+
+        .indicator {
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: grey;
+        }
+
+        .progress-bar-wrapper {
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .progress-bar {
+            position: absolute;
+            left: 3px;
+            width: 20%;
+            transition: 0.4s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar-container">
+        <span class="indicator">0%</span>
+        <div class="progress-bar-wrapper">
+            <div id="bar" class="progress-bar"></div>
+        </div>
+        <span class="indicator">100%</span>
+    </div>
+
+    <script>
+        function isValidPercentage(number) {
+            if(number >= 0 && number <= 100){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        function getProgressColor(percentage) {
+            if (percentage <= 20) return 'darkred';
+            else if (percentage <= 50) return 'orange';
+            else if (percentage <= 80) return 'blue';
+            else return 'green';
+        }
+
+        function modifyProgressBar(number, color) {
+            let progressBar = document.getElementById('bar');
+            progressBar.style.backgroundColor = color;
+            progressBar.style.height = `${number}%`;
+            progressBar.title = `Progress: ${number}%`;
+        }
+
+        function setProgress(percentage) {
+            if (!isValidPercentage(percentage)) {
+                throw new Error('Write a valid percentage!');
+            }
+
+            let color = getProgressColor(percentage);
+            modifyProgressBar(percentage, color);
+        }
+
+        let intervalId;
+
+        function startRandomProgress() {
+            intervalId = setInterval(() => {
+                let randomPercentage = Math.floor(Math.random() * 101);
+                setProgress(randomPercentage);
+            }, 2000);
+        }
+
+        startRandomProgress();
+    </script>
+</body>
+
+</html>
