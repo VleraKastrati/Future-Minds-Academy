@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+</head>
+
+<body>
+    <script>
+
+
+        function generateFibonacci(x) {
+            if (x <= 0) return [];
+
+            let fibSequence = [1];
+            if (x === 1) return fibSequence;
+
+            fibSequence.push(1);
+            for (let i = 2; i < x; i++) {
+                fibSequence.push(fibSequence[i - 1] + fibSequence[i - 2]);
+            }
+
+            return fibSequence;
+        }
+
+
+        let userInput = prompt("Enter the number of Fibonacci numbers to generate:");
+        let x = parseInt(userInput);
+
+
+        if (isNaN(x) || x <= 0) {
+            console.log("Please enter a valid positive number.");
+        } else {
+            let fibonacciNumbers = generateFibonacci(x);
+            console.log("The first " + x + " numbers in the Fibonacci Sequence are:");
+            console.log(fibonacciNumbers.join(", "));
+        }
+    </script>
+</body>
+
+</html>

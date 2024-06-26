@@ -15,16 +15,10 @@
             <th>Bio</th>
         </thead>
         <tbody id="allprofiles">
-
         </tbody>
     </table>
-    <div id="allprofiles"></div>
-
-
+    
     <script>
-        const allprofiles = document.querySelector("#allprofiles");
-
-
         let profiles = [
             {
                 name: 'Ridvan Aliu',
@@ -60,35 +54,21 @@
             }
         ];
 
-
-
         const allprofiles = document.querySelector('#allprofiles');
-        for (let i = 0; i < profiles.length; i++) {
-
-            allprofiles.innerHTML += renderHTML(profiles[i].name, profiles[i].age, profiles[i].bio);
-        }
-
-
-
-
-
-
-        renderHTML();
 
         function renderHTML(name, age, bio) {
-            let finalHTML = '';
-
-            finalHTML +=
-                `
+            let finalHTML = `
             <tr>
                 <td>${name}</td>
-            <td>${age}</td>
-            <td>${bio}</td>
+                <td>${age}</td>
+                <td>${bio}</td>
             </tr>
             `;
-
             return finalHTML;
+        }
 
+        for (let i = 0; i < profiles.length; i++) {
+            allprofiles.innerHTML += renderHTML(profiles[i].name, profiles[i].age, profiles[i].bio);
         }
     </script>
 </body>
