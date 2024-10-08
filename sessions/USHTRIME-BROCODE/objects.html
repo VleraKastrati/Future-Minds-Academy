@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person1 = {
+        firstName: "Vlera",
+        favFoods: "Pizza",
+        sayHello: function(){console.log(`Hi! I like ${this.favFoods}`)},
+        eat: function(){console.log(`${this.firstName} is eating ${this.favFoods}` )}
+        }
+
+        const person2 = {
+        firstName: "Lela",
+        favFoods: "Hamburger",
+        sayHello: function(){console.log(`Hi! I like ${this.favFoods}`)},
+        eat: function(){console.log(`${this.firstName} is eating ${this.favFoods}` )}
+        }
+        
+       person1.eat();
+       person2.eat();
+
+       let person = {
+        name: 'John Doe',
+        age: '30',
+        getName: function(){
+            return this.name;
+        },
+        setName: function(name){
+            this.name = name;
+        },
+        getAge: function(){
+            return this.age;
+        },
+        setAge: function(age){
+            this.age = age;
+        }
+       }
+        console.log(person.getName());
+        person.setName('Jane');
+       console.log(person.getName());
+       console.log(person.getAge());
+       person.setAge('55');
+       console.log(person.getAge());
+       
+    </script>
+</body>
+</html>

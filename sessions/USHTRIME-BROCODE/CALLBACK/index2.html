@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let text = 'Hello, Vlera!';
+    text = text.toUpperCase();
+    console.log(text);
+
+
+    let text1 = 'Hello, Dolly!';
+    let myChar = text1.charAt(0);
+    let myOtherChar = text1.charAt(8);
+    console.log(myChar);
+    console.log(myOtherChar);
+
+    let text2 = 'Hello, Dolly!';
+    let myBool = text2.startsWith('H');
+    let myOtherBool = text2.endsWith('y');
+    console.log(text2);
+
+    let text3 = 'Hello, Dolly!';
+    let myBool1 = text3.includes('Dolly');
+    let myOtherBool1 = text3.includes('hello');
+    console.log(text3);
+    
+
+    let text4 = `
+Hello, Dolly!          `;
+    let trimmed = text4.trim();
+    console.log(trimmed);
+
+    let text5 = 'run, ';
+    let repeatedText = text5.repeat(4);
+    console.log(repeatedText);
+
+    let text6 = 'Hello, Dolly!';
+    let length = text6.length;
+    console.log(length);
+
+
+    let text7 = 'Hello, Dolly!';
+    console.log(text7.substring(0,5));
+    console.log(text7.substring(7));
+    console.log(text7.substring(0, text7.length - 1));
+
+
+    let username = "BroCode";
+    console.log(username.charAt(1));
+  </script>
+</body>
+
+</html>

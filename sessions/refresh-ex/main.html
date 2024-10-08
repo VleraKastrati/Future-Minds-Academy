@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh exercises</title>
+    <style>
+        body {
+            font-size: 20px;
+            padding: 50px;
+        }
+        button {
+            font-size: 20px;
+            padding: 20px;
+        }
+        div {
+            width: 500px;
+            margin: 20px 0px;
+            border: 1px solid gray;
+        }
+
+        textarea { width: 500px; height: 200px;}
+    </style>
+</head>
+<body>
+    <button id="actionBTN">Hide Box</button> <button id="redBTN">Red</button><button id="blueBTN">Blue</button>
+    <div class="boxOne">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptates quia, maiores veritatis, eveniet pariatur, repudiandae suscipit mollitia possimus excepturi natus? Hic eos rem vel. Cupiditate aspernatur amet qui error.</div>
+    <textarea name="biograpy" id="biograpy"></textarea>
+    <br>
+    <button id="sentTop">Send to top</button>
+    <script>
+
+        const actionBTN = document.querySelector('#actionBTN');
+        const boxOne = document.querySelector('.boxOne');
+        const redBTN = document.querySelector('#redBTN');
+        const blueBTN = document.querySelector('#blueBTN');
+        const biograpy = document.querySelector('#biograpy');
+        const sentTop = document.querySelector('#sentTop');
+
+        let showhide = true;
+
+        actionBTN.addEventListener('click', function(){
+            if(showhide){ 
+                boxOne.style.visibility = 'hidden';
+                actionBTN.textContent = 'Show box';
+                showhide = false;
+            }
+            else {
+                boxOne.style.visibility = 'visible';
+                actionBTN.textContent = 'Hide box';
+                showhide = true;
+            }
+        });
+
+
+        redBTN.addEventListener('click', function(){
+            boxOne.style.background = 'red';
+        });
+
+        blueBTN.addEventListener('click', function(){
+            boxOne.style.background = 'blue';
+        });
+
+        sentTop.addEventListener('click', function(){
+            boxOne.textContent = biograpy.value;
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+     let paragraphs = Array.from(document.querySelectorAll('p'));
+
+     paragraphs.forEach((paragraph) => {
+        paragraph.classList.add('cool'); 
+ 
+     });
+
+
+        let name = 'Vlera';
+        let characters = name.split('');
+        console.log(characters); //del v l e r a  shkronjat e ndame//
+
+
+        let sentence = 'The birds and the trees';
+        let words = name.split(' ');
+        console.log(words);
+
+        let numbers = [1, 7, 9];
+        console.log(numbers.join(':')); //del 1:7:9//
+    </script>
+</body>
+
+</html>

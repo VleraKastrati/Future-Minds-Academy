@@ -3,7 +3,7 @@ cursor: url(image/narrow.left.png),auto;
 }
 
 body{
-background-size cover;
+background-size: cover;
 background-image: url(image/water\ drops.avif);
 
 }

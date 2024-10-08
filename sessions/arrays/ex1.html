@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+
+<body>
+    <h3 id="firstName">First Name: </h3>
+    <h3 id="lastName">Last Name: </h3>
+    <h3 id="add">Address: </h3>
+    <h3 id="tel">Phone: </h3>
+
+    <script>
+        const firstName = document.querySelector('#firstName');
+        const lastName = document.querySelector('#lastName');
+        const add = document.querySelector('#add');
+        const tel = document.querySelector('#tel');
+
+
+        let personInfo = ['Ridvan', 'Aliu', '9024 Edenshire Dr', '+1206451732'];
+        firstName.innerHTML = 'First Name: ' + personInfo[0];
+        lastName.innerHTML = 'Last Name: ' + personInfo[1];
+        add.innerHTML = 'Address: ' + personInfo[2];
+        tel.innerHTML = 'Phone: ' + personInfo[3];
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let fruits = ["apple", "orange", "banana", "coconut"];
+
+        fruits.forEach(capitalize); //nese e bojm upperCase dhe i kemi shkronjat e vogla bohen te medha//
+        fruits.forEach(display);
+
+        function upperCase(element, index, array){
+            array[index] = element.toUpperCase();
+        }
+
+        function lowerCase(element, index, array){
+            array[index] = element.toLowerCase();
+        }
+
+        function capitalize(element, index, array){
+            array[index] = element.charAt(0).toUpperCase() + element.slice(1)//element.slice nese e bojm nr 2 e hek nga nje shkronje nr 0 e shton AAple//
+        }
+
+        function display(element) {
+            console.log(element);
+        }
+    </script>
+</body>
+
+</html>
