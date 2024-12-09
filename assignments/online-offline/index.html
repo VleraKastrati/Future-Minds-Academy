@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    hr {
+      width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Welcome to the Page!</h1>
+  <hr>
+  <h3 id="Online/Offline"></h3>
+
+  <script>
+    let paragraphOnOff = document.getElementById('Online/Offline');
+    paragraphOnOff.textContent = 'You are Online';
+    paragraphOnOff.style.color = 'Green';
+
+    window.addEventListener('offline', function () {
+      paragraphOnOff.textContent = 'You are Offline, please wait until you are reconnected';
+      paragraphOnOff.style.color = 'Red';
+    })
+
+    window.addEventListener('online', function () {
+      paragraphOnOff.textContent = 'You are Online';
+      paragraphOnOff.style.color = 'Green';
+    })
+  </script>
+</body>
+
+</html>
