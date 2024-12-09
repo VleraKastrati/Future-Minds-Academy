@@ -1,4 +1,5 @@
-
+// kur shkon te posht y rritet te nalt zvoglohet
+// x djathtas rritet...
 
 const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext("2d");
@@ -20,6 +21,7 @@ catObj.y = 40;
 catObj.width = 105;
 catObj.height = 128;
 catObj.speed = 5;
+let macaOn = false;
 
 let catReady = false;
 const catImg = new Image();

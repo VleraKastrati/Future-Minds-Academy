@@ -11,15 +11,15 @@
     <script>
        
 
-        let myButton = document.getElementById('btn');
-        let counter = document.getElementById('counter');
-        let currentCount = 0;
+    let btn = document.querySelector('#btn');
+    let counter = document.querySelector('#counter');
+    let counting = 0;
 
-        function onButtonClicked(){
-            currentCount++;
-            counter.textContent = currentCount;
-        }
-        myButton.addEventListener('click', onButtonClicked);
+btn.addEventListener('click', function(){
+    counting++;
+    counter.textContent = counting;
+})
+
     </script>
 </body>
 </html>

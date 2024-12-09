@@ -1,0 +1,42 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 750px;
+    background-color: aqua;
+    line-height: 3rem; 
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar{
+    font-size: 1rem;
+}
+.nav a{
+text-decoration: none;
+color: black;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+}
+.nav .home{
+    color: tomato;
+}
+.nav a:hover {
+    color: tomato;
+}
+

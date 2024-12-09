@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    <style>
+        .green { color: green; }
+    </style>
+</head>
+<body>
+    <ul id="list"> </ul>
+   
+
+    <script>
+        const list = document.querySelector('#list');
+        let nav = ['Home', 'Services', 'About', 'Contact'];
+      
+        list.innerHTML = 
+        function mainNav(obj, i){
+            obj.classList.add('green');
+            obj.innerHTML = nav[i] + ' <img width="10" src="arrow-right.png" alt="">'
+        }
+    </script>
+</body>
+</html>

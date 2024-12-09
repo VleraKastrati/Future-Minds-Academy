@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #labelCount{
+            display: block;
+            text-align: center;
+            font-size: 8em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #btnContainer{
+            text-align: center;
+        }
+        .buttons{
+            padding: 10px 20px;
+            font-size: 1.3rem;
+            color: white;
+            background-color: slategrey;
+            border-radius: .3rem;
+            cursor: pointer;
+            transition: background-color 0.25s;
+        }
+        .buttons:hover{
+            background-color: rgb(114, 143, 172);
+        }
+    </style>
+</head>
+<body>
+    <label id="labelCount">0</label>
+    <div id="btnContainer">
+        <button id="decreaseBtn" class="buttons">Decrease</button>
+        <button id="resetBtn" class="buttons">Reset</button>
+        <button id="increaseBtn" class="buttons">Increase</button>
+    </div>
+
+    <script>
+
+const labelCount = document.querySelector('#labelCount');
+const decreaseBtn = document.querySelector('#decreaseBtn');
+const resetBtn = document.querySelector('#resetBtn');
+const increaseBtn = document.querySelector('#increaseBtn');
+let count = 0;
+
+decreaseBtn.addEventListener('click', function(){
+    if(count != 0) {count--}; //ktu veq e shtojm qato me if per mos me shku maposht se 0.
+    labelCount.textContent = count;
+});
+
+increaseBtn.addEventListener('click', function(){
+    count++;
+    labelCount.textContent = count;
+});
+
+resetBtn.addEventListener('click', function(){
+    count = 0;
+    labelCount.textContent = count;
+});
+    </script>
+</body>
+</html>

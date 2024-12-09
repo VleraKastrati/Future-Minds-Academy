@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="addNum">Add</button>
+    <div id="num">0</div>
+
+
+    <script>
+        let addNum = document.querySelector('#addNum');
+        let num = document.querySelector('#num');
+        let count = 0;
+
+       addNum.addEventListener('click', function(){
+        count++;
+        num.textContent = count;
+        });
+
+        
+    </script>
+</body>
+</html>
