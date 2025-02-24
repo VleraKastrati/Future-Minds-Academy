@@ -21,10 +21,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
-section{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-}
+
 .header{
     position: fixed;
     top: 0;
@@ -60,26 +57,14 @@ border-bottom: 1rem solid rgba(0, 0, 0, .2);
     color: var(--text-color);
     display: none;
 }
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.home-img img{
-    width: 35vw;
-    border-radius: 50%;
-    animation: floatImage 4s ease-in-out infinite;
-}
-@keyframes floatImage {
-    0% {
-   transform: translateY(0);
-    }
-    50% {
-   transform: translateY(-2.4rem);
-         }
-    100% {
-   transform: translateY(0);
-             }
 }
 .home-content h3{
     font-size: 3.2rem;
@@ -133,6 +118,24 @@ box-shadow: 0 0 1rem var(--main-color);
 .btn:hover{
     box-shadow: none;
 }
+.home-img img{
+    width: 35vw;
+    border-radius: 50%;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0% {
+   transform: translateY(0);
+    }
+    50% {
+   transform: translateY(-2.4rem);
+         }
+    100% {
+   transform: translateY(0);
+             }
+}
+
+
 .about{
     display: flex;
     justify-content: center;
@@ -159,6 +162,8 @@ box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+
 .services h2{
     margin-bottom: 5rem;
 }
@@ -193,6 +198,8 @@ box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+
 .portfolio{
     background: var(--second--bg-color);
 }
@@ -258,6 +265,8 @@ box-shadow: 0 0 1rem var(--main-color);
     font-size: 2rem;
     color: var(--second--bg-color);
 }
+
+
 .contact h2{
     margin-bottom: 3rem;
 }
@@ -292,6 +301,8 @@ box-shadow: 0 0 1rem var(--main-color);
     margin-top: 2rem;
     cursor: pointer;
 }
+
+
 .footer{
     display: flex;
     justify-content: space-between;

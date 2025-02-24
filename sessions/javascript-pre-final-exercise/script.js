@@ -5,6 +5,7 @@ for(let i=0; i < allMovies.length; i++){
     <option value="0">${allMovies[i].gerne}Actions</option>
     `
 }
+loadMovies();
 function loadMovies(g) {
     movielist.innerHTML ='';
     for (let i=0; i<allMovies(g).movies.length; i++){
